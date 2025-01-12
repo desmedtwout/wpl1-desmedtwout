@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website met Header en Body</title>
+<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+        margin: 0;
+        font-family: 'Inknut Antiqua', serif;
+    }
+
+        /* Navigatiebalk */
+        nav {
+        background-color: #333;
+        color: white;
+        padding: 1em;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+        nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 1.2em;
+    }
+
+        nav a:hover {
+        text-decoration: underline;
+    }
+
+        section {
+        padding: 50px 20px;
+        min-height: 100vh;
+    }
+
+        /* Home sectie */
+        #home {
+        background-color: lightgray;
+        text-align: center;
+    }
+
+        #home h1 {
+        margin-top: 50px;
+    }
+
+        /* Projecten sectie */
+        #projecten {
+        background-color: lightblue;
+    }
+
+        #projecten h1 {
+        text-align: center;
+    }
+
+        .pdf-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+        /* Contact sectie */
+        #contact {
+        background-color: lightyellow;
+    }
+
+        #contact h1 {
+        text-align: center;
+    }
+
+        .contact-info {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+        .contact-info p {
+        font-size: 1.2em;
+    }
+
+        /* Header */
+        .header {
+        display: flex;
+        align-items: center;
+        color: white;
+        height: 300px;
+        padding: 20px;
+        background-image: url('images/nature-bg.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+
+        .header img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+
+        /* Eerste sectie (gele achtergrond) */
+        .yellow-section {
+        background-color: lightyellow;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+        .yellow-section img {
+        width: 300px;
+        height: auto;
+    }
+
+        .yellow-section .text-content {
+        max-width: 600px;
+    }
+
+        .yellow-section .text-content h2 {
+        margin: 0 0 10px;
+    }
+
+        /* Tweede sectie (blauwe achtergrond) */
+        .blue-section {
+        background-color: #b4e7ff;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+        .blue-section img {
+        width: 600px;
+        height: auto;
+    }
+
+        .blue-section .text-content {
+        max-width: 600px;
+    }
+
+        .blue-section .text-content h2 {
+        margin: 0 0 10px;
+    }
+
+        /* Footer */
+        footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#projecten">Projecten</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <div class="header">
+        <img src="images/uil.jpg" alt="Profielfoto">
+            <div>
+                <h1>Wout De Smedt</h1>
+                <p>Graphic Designer</p>
+            </div>
+    </div>
+
+    <!-- Eerste foto op gele achtergrond -->
+    <div class="yellow-section">
+        <img src="images/selfie-balon.PNG" alt="Foto 1">
+            <div class="text-content">
+                <h2>Over Mij</h2>
+                <p>Ik ben Wout De Smedt, 21 jaar oud en ben student Digitale Vormgeving op PXL Hasselt. Ik ben zeer geïnteresseerd in het maken van designs. Ik hou veel van de natuur en gebruik dit graag als inspiratie voor designs.
+                    Ik ben sportief, ik ga vaak lopen in de natuur of ik doe een wandeling. Ook skate ik vaak.
+                    Ik ben heel mijn jeugd bezig geweest met tekenen en piano spelen, dit interesseert mij omdat ik hierbij creatief te werk kan gaan net zoals bij het maken van designs.</p>
+            </div>
+    </div>
+
+    <!-- Tweede foto op blauwe achtergrond -->
+    <div class="blue-section">
+        <img src="images/school-projecten.PNG" alt="Foto 2">
+            <div class="text-content">
+                <h2>Mijn Projecten</h2>
+                <p>Hier zijn enkele van mijn visual designs die ik het afgelopen jaar heb gemaakt.</p>
+            </div>
+    </div>
+</section>
+
+<section id="projecten">
+    <h1>Mijn Projecten</h1>
+    <div class="pdf-container">
+        <p>Bekijk hier mijn projecten:</p>
+        <a href="PDF/Mijn-WPL-Opdrachten.pdf" target="_blank">Download mijn PDF</a>
+    </div>
+</section>
+
+<section id="contact">
+    <h1>Contactgegevens</h1>
+    <div class="contact-info">
+        <p><strong>E-mail:</strong> wout.desmedt@student.pxl.com</p>
+        <p><strong>Telefoon:</strong> +485 75 98 78</p>
+        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/wout.de.smedt" target="_blank">@wout.de.smedt</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/desmedtwout" target="_blank">LinkedIn-profiel</a></p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Wout De Smedt. Alle rechten voorbehouden.</p>
+</footer>
+</body>
+</html>
